@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+    </style>
     <link rel="icon" href="assets/images/logo1.png">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Mockup</title>
+    <title> Monks Mockup</title>
 </head>
 <body>
     <header id="cabecalho">
             <nav id="menu-header">
                 <a href="https://www.monks.com/pt"><img id="logo-monks" src="assets/images/logo.png" alt="logo da monks"></a>
-                <ul>
+                <div id="menu-toggle" class="mobile-menu-icon"><img src="assets/images/menu.png" alt="Ícone de menu"></div>
+                <ul id="menu" class="desktop-menu">
                     <li id="cat-1"><a href="#products" class="skip-link">Categoria 1</a></li>
                     <li id="cat-2"><a href="#simple-gallery">Categoria 2</a></li>
                     <li id="cat-3"><a href="#products-box">Categoria 3</a></li>
@@ -130,5 +138,57 @@
                 <button id="bt-card">Lorem ipsum</button>
             </div>
         </div>
+
+        <div id="forms-box">
+            <img id="vector-forms" src="assets/images/vector.png" alt="Imagem formulário">
+
+            <form id="form-verify">
+                <div id="text-formbox">
+                    <h1 id="title-forms">Lorem ipsum dolor sit amet consectetur</h1>
+                    <h3 id="subtitle-forms">Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque</h3>
+                    <h5 id="text-form">*Lorem ipsum dolor sit amet consectetur</h5>
+                </div>
+
+                <div id="form-fields">
+                    <input type="text" placeholder="Categoria*"> <!--Required placeholder !-->
+                    <input type="text" placeholder="Categoria*"> <!--Required placeholder !-->
+                    <input type="text" placeholder="Categoria">
+                    <input type="text" placeholder="Categoria">
+                </div>
+                
+                <div id="security">
+                    <h2 id="title-security">Verificação de segurança</h2>
+                    <div id="sum">
+                        <p>
+                            <span id="numero1"></span> <img src="assets/images/plus-icon.png" alt="Ícone de soma"> <span id="numero2"></span>
+                        </p>
+                    </div>
+                    <img src="assets/images/result.png" alt="Ícone de resultado">
+                    <input id="result" type="number" placeholder="Resultado*">
+
+                    <button id="submit">Lorem ipsum</button>
+                </div>
+            </form>
+        </div>
+
+        <footer id="footer">
+            <div id="line"></div>
+            <div id="social-icons">
+                <a href="https://www.instagram.com/"><img src="assets/images/instagram.png" alt="Logo Instagram"></a>
+                <a href="https://www.whatsapp.com/?lang=pt_BR"><img src="assets/images/whatsapp.png" alt="Logo Whatsapp"></a>
+                <a href="https://x.com/monksinbrazil"><img src="assets/images/twitterx.png" alt="Logo Twitter"></a>
+                <a href="https://www.facebook.com/?locale=pt_BR"><img src="assets/images/facebook.png" alt="Logo Facebook"></a>
+            </div>
+
+            <h4 id="title-footer">Lorem ipsum dolor sit amet</h4>
+            <ul id="footer-list">
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+            </ul>
+        </footer>
+
+        <script src="script.js"></script>
 </body>
 </html>
