@@ -34,6 +34,10 @@ body {
     margin-top: 2.5rem;
 }
 
+#mobile-menu-icon {
+    display: none;
+}
+
 #menu-header {
     position: absolute;
     margin: 1rem 40rem 27rem 2rem;
@@ -118,15 +122,6 @@ body {
     }
 }
 
-#title-box {
-    margin: 15px auto;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1%;
-    margin-left: 17%;
-}
-
 .products {
     margin: 0 auto;
     margin-top: 3rem;
@@ -134,6 +129,16 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+#title-box {
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+    margin-left: 17%;
+}
+
 
 #title-products {
     margin: 0;
@@ -584,7 +589,7 @@ body {
     margin: 0 auto;
     padding: .5rem;
     width: 29%;
-    border-radius: 0.5rem;
+    border-radius: .5rem;
     border: solid;
     outline: #EAE8E4;
     border-color: #EAE8E4;
@@ -670,81 +675,363 @@ body {
     word-spacing: .025rem;
 }
 
-@media (max-width: 768px) {
-    /* Ajustes para telas menores */
-    #menu {
-        display: none; /* Esconde o menu na versão mobile */
+/* MEDIA QUERIES PARA MOBILE */
+
+@media (max-width: 900px) {
+
+    * {
+        margin: 0 auto;
+        padding: 0;
+        max-width: 100%;
     }
 
-    #menu-toggle {
-        display: block; /* Exibe o ícone de menu */
+    #image-monks {
+        visibility: hidden;
     }
 
-    #text-box-header {
-        padding: 10px;
-    }
-
-    .cards-products {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    #simple-gallery #secondary-pics {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    #products-box {
-        text-align: center;
-    }
-
-    #app-section {
-        text-align: center;
-    }
-
-    #app-buttons {
+    #logo-monks {
+        margin: 0 auto;
+        margin-left: 14rem;
+        margin-top: 2rem;
+        padding: 0;
         display: flex;
-        flex-direction: column;
-        gap: 10px;
-        justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
-    }
-
-    #footer {
-        text-align: center;
-    }
-
-    /* Ajustes para o formulário */
-    #form-fields input {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    #security {
-        text-align: center;
-    }
-
-    #social-icons {
-        display: flex;
         justify-content: center;
-        gap: 10px;
-    }
-}
-
-/* Ajustes para telas muito pequenas */
-@media (max-width: 480px) {
-    h1, h2, h3, h4, h5 {
-        font-size: 16px; /* Diminui o tamanho das fontes */
     }
 
-    .card {
-        padding: 10px;
+    #mobile-menu-icon {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        margin-left: 10.5rem;
+        margin-top: 2.2rem;
+    }
+
+    #menu {
+        display: none;
+        width: 10rem;
+    }
+
+    #menu.show {
+        display: block;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    #menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #title-header {
+        margin: 0 auto;
+        margin-left: 10rem;
+        margin-top: 2rem;
+        padding: 0;
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 2rem;
+        align-items: center;
+        justify-content: start;
+    }
+
+    #subtitle-header {
+        margin: 0 auto;
+        margin-left: 10rem;
+        margin-top: 1rem;
+        padding: 0;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.2rem;
+        align-items: center;
+        justify-content: center;
     }
 
     #scroll-icon {
-        width: 30px;
-        height: 30px;
+        margin-left: 20rem;
+    }
+
+    #title-box {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    #title-box {
+        margin-top: 1rem;
+        margin-left: 12%;
+    }
+
+    #title-products {
+        margin: 0 auto;
+        padding: 0;
+        margin-right: 5rem;
+        margin-left: 0rem;
+        font-size: 1.75rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: start;
+    }
+
+    #subtitle-products {
+        margin: 1rem 2rem 2.25rem 0rem;
+        padding: 0;
+        font-size: 1.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: start;
+        text-align: start;
+        text-justify: inter-word;
+    }
+
+    #simple-gallery, #main-picture {
+        margin: 0 auto;
+        margin-top: 2.25rem;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #title-box-gallery {
+        margin: 0 auto;
+        padding: 0;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #title-gallery {
+        font-size: 2rem;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+        margin-bottom: 1rem;
+    }
+
+    #subtitle-gallery {
+        font-size: 1.3rem;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+        margin-bottom: 1rem;
+    }
+
+    #secondary-pics {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    #app-section {
+        margin: 0 auto;
+        padding: 0;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        height: 25rem;
+    }
+
+    #title-box-app {
+        margin: 0 auto;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    #title-app {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-top: 0rem;
+        padding-top: 0;
+        width: 100%;
+        text-align: start;
+    }
+
+    #subtitle-app {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    #app-buttons {
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 13.5rem;
+        margin-right: 2rem;
+    }
+
+    #title-pbox {
+        display: flex;
+        text-align: justify;
+        word-spacing: .01rem;
+        max-width: 100%;
+        font-size: 1.55rem;
+    }
+
+    #frame-tags {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .tag {
+        margin: 0;
+        padding: .8rem 1rem 1rem 1rem;
+        font-size: 1rem;
+    }
+
+    #card-section {
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 5rem;
+    }
+
+    #card-section .card {
+        width: 100%;
+        height: 14.45rem;
+    }
+
+    #card-section #title-card {
+        margin-top: 1rem;
+        margin-bottom: .1rem;
+    }
+    
+    #card-section #subtitle-card {
+        margin-top: 0rem;
+    }
+
+    #bt-card {
+        align-items: center;
+        align-self: center;
+        margin-left: 2.75rem;
+    }
+
+    #forms-box {
+        margin: 0 auto;
+        padding: 0;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #vector-forms {
+        margin: 0 auto;
+        margin-top: 2rem;
+        padding: 0;
+        align-items: center;
+        align-self: center;
+    }
+
+    #form-verify {
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #title-forms {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    #subtitle-forms {
+        font-size: 1rem;
+    }
+
+    #text-form {
+        font-size: .9rem;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    #form-fields {
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: .2rem;
+    }
+
+    #form-fields input {
+        width: 100%;
+    }
+
+    #security {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #title-security {
+        margin-left: 1.75rem;
+        margin-bottom: .5rem;
+    }
+
+    #sum {
+        width: 35%;
+        margin-left: 0;
+    }
+
+    #result {
+        padding: .3rem;
+        font-size: 1rem;
+        letter-spacing: .05rem;
+    }
+
+    #numero1, #numero2 {
+        font-family: 'Helvetica Neue Bold', sans-serif;
+        font-size: 1.1rem;
+        color: #7d26c9;
+    }
+
+    #icon-result {
+        margin-right: 2rem;
+    }
+
+    #submit {
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+
+    #footer {
+        height: 16.5rem;
+    }
+
+    #footer-list {
+        max-width: 100%;
+        margin-top: 1.55rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        gap: 1rem;
     }
 }
